@@ -1,0 +1,341 @@
+@font-face {
+    font-family: Source Sans Pro;
+    src: local("Source Sans Pro Medium"), url('fonts/SourceSansPro-Medium.ttf') format("truetype");
+    font-weight: regular;
+}
+@viewport {
+    width: device-width;
+}
+:root {
+    font-family: 'Source Sans Pro Medium', sans-serif;
+    --color-diamond: #669ecd;
+    --color-pearl: #c981c3;
+    --font-size: 16px;
+    --bg-color: #6e6e6e;
+    --bg2-color: white;
+    --bg3-color: #8e8e8e;
+    --poke-red: #e4000f;
+    --hover-color: #ffffff90;
+    --border-thick: 1px;
+    --border-color: #000;
+    --border-radius: .5rem;
+    --table-padding: .3em;
+    --misc-padding: .5em;
+    --base-text-shadow: 0 0 2px black;
+    --base-text-shadow2: 0 0 2px #e4000f;
+}
+html {
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: var(--poke-red);
+    background-image: url('../images/pokebg.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+body {
+    margin: 0 auto;
+    padding: 0;
+    border: var(--border-thick) solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size);
+    background-color: var(--bg-color);
+}
+nav {
+    margin: 0 auto;
+}
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    overflow: auto;
+    justify-content: center;
+}
+section {
+    border: 1px solid black;
+    border-radius: var(--border-radius);
+    background-color: var(--bg3-color);
+    padding: .5em;
+    margin: .5em;
+}
+section section {
+    padding: 0;
+    border: none;
+    margin: 0;
+}
+article {
+    margin-bottom: .5em;
+}
+figcaption {
+    text-align: center;
+}
+ol {
+    list-style: none;
+}
+ol, ul {
+    border: var(--border-thick) solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--poke-red);
+}
+ol ul {
+    border: var(--border-thick) solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: white;
+}
+ol ul b {
+    color: black;
+    text-shadow: 0 0 0px black;
+}
+ol {
+    margin: 1em;
+    padding: 1em 1em 1em 2em;
+}
+p~ul {
+    margin: 1em;
+}
+main ul {
+    list-style-image: url("../images/pokecube_bullet.png");
+}
+ul ul {
+    border: var(--border-thick) solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: white;
+}
+li a {
+    display: block;
+    color: var(--border-color);
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+}
+nav li:hover {
+    background-color: var(--hover-color);
+    border-left: var(--border-thick) solid var(--border-color);
+    border-right: var(--border-thick) solid var(--border-color);
+}
+h1, h2, h4, h3, h5 {
+    margin: 0 auto;
+    padding: var(--misc-padding);
+    text-align: center;
+    background-color: var(--poke-red);
+    padding: var(--table-padding);
+    border: var(--border-thick) solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+h2, h4, table {
+    background-color: var(--bg2-color);
+}
+p, p+ul, ul+ul {
+    margin: var(--misc-padding) auto;
+}
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: var(--misc-padding) auto;
+}
+td, th {
+    border: var(--border-thick) solid var(--border-color);
+    padding: var(--table-padding);
+    overflow: auto;
+}
+th {
+    background-color: var(--poke-red);
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+    border: var(--border-thick) solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+i {
+    padding-right: 0 .1em 0 .1em;
+    color: var(--poke-red);
+    text-shadow: var(--base-text-shadow),var(--base-text-shadow),var(--base-text-shadow),var(--base-text-shadow);
+}
+h1, h3, b, th, em, strong {
+    padding-right: 0 .1em 0 .1em;
+    color: white;
+    text-shadow: var(--base-text-shadow),var(--base-text-shadow),var(--base-text-shadow),var(--base-text-shadow);
+}
+p~ul {
+    display: inline-block;
+    margin: .5em 3em;
+    list-style: none;
+    padding: .5em 1em 1em 1em;
+}
+.diamond {
+    background-image: linear-gradient(to right, var(--color-diamond), var(--color-pearl));
+}
+.diamond ul {
+    border: 1px dotted black;
+    background-color: var(--color-diamond);
+}
+.pearl {
+    background-image: linear-gradient(to right,var(--color-pearl), var(--color-diamond));
+}
+.pearl ul {
+    border: 1px dotted black;
+    background-color: var(--color-pearl);
+}
+iframe {
+    border: var(--border-thick) solid var(--border-color);
+    border-radius: var(--border-radius);
+    display: block;
+    margin: var(--misc-padding) auto;
+}
+br+ul {
+    text-align: center;
+}    
+br+ul>li {
+    font-size: 1.5em;
+    padding-right: 1em;
+    display: inline-block;
+}
+#exclusives>h2 {
+    color: white;
+    text-shadow: var(--base-text-shadow),var(--base-text-shadow),var(--base-text-shadow),var(--base-text-shadow);
+    background-image: linear-gradient(to right, var(--color-diamond), var(--color-pearl));
+}
+p a b {
+    color: #669ecd
+}
+figure {
+    margin: .5em;
+}
+#team-imgs, .three-imgs {
+    margin: 0 auto;
+    width: 90%;
+}
+@media (hover: none) {
+    tr:nth-child(off) {
+        background-color: lightgray;
+    }
+}
+@media (hover: hover) {
+    tr:hover {
+        background-color: var(--bg-color);
+    }
+}
+@media screen and (min-width:600px) {
+    #exclusives {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        box-sizing: border-box; 
+        grid-template-areas:    "top top"
+                                "middle-top middle-top"
+                                "bottom-left bottom-right"
+    }
+    #exclusives>h2 {
+        min-width: 99%;
+        grid-area: top;
+    }
+    #exclusives>h2+p {
+        grid-area: middle-top;
+    }
+    p+ul {
+        min-width: 50%;
+        grid-area: bottom-left;
+    }
+    ul+ul {
+        min-width: 50%;
+        grid-area: bottom-right;
+    }
+    body {
+        padding: var(--table-padding);
+    }
+}
+@media screen and (min-width: 720px) {
+    body {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    ol {
+        column-count: 2;
+        column-gap: 1em;
+    }
+    #elite-four-intro {
+        column-count: 2;
+        column-gap: 1em;
+    }
+    body {
+        width:90%;
+    }
+    p {
+        width: 94%;
+    }
+    iframe {
+        width: 560px;
+        height: 315px;
+    }
+    nav ul {
+        display: flex;
+    }
+    li a {
+        padding: 1em 3em 1em 3em;
+    }
+    table {
+        width: auto;
+    }
+}
+@media screen and (min-width: 850px) {
+    .three-imgs {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #team-imgs, #tms, #contest-imgs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+    }
+    .three-imgs img {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #gyms, #elite-four, #tips-tricks {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+    }
+    article section {
+        margin: 0;
+    }
+    #underground img {
+        float: right;
+        margin: 0 1em;
+    }
+    #park img {
+        float: left;
+        margin: 0 1em;
+    }
+    #team-imgs {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1400px) {
+    body {
+        max-width: 1400px;
+    }
+}
+/* 1920*1080 */
+/* @media screen and (min-width: 1920px) {
+    body {
+        width: 75%;
+    }
+} */
+/* 2560x1440 */
+/* @media screen and (min-width: 2560px) {
+    body {
+        width: 60%;
+    }
+} */
+/* 3840x2160 */
+/* @media screen and (min-width: 3840px) {
+    body {
+        width: 50%;
+    }
+} */
