@@ -4,3 +4,5 @@ Pokémon BD&amp;SP
 Pokémon GenIV Remakes BD&SP
 
 Pokémon Site written for an assignemnt using HTML and CSS.
+
+https://jcod2.github.io/html_css_pokemon_bdsp/index.html
